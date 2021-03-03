@@ -20,6 +20,7 @@ void APlayerPawnBase::BeginPlay()
 {
 	Super::BeginPlay();
 	SetActorRotation(FRotator(-90, 0, 0));
+	CreateSnakeActor();
 }
 
 // Called every frame
@@ -36,7 +37,7 @@ void APlayerPawnBase::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 
 }
 
-void APlayerPawnBase::CreateSmakeActor()
+void APlayerPawnBase::CreateSnakeActor()
 {
 	SnakeActor = GetWorld()->SpawnActor<ASnakeBase>(SnakeActorClass, FTransform());
 }
