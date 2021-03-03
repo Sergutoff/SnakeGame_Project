@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\SnakeGame.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{B4B4869E-A29F-4E46-B861-C6A63C184B7A}</UniqueIdentifier>
+      <UniqueIdentifier>{1CBE666D-4AD0-4E8B-9BAC-91C55F8299C2}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\SnakeGame.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{D762C290-2363-4DB4-B407-0D779A716B9E}</UniqueIdentifier>
+      <UniqueIdentifier>{8F2F955F-5DA0-44BB-B24E-9824A8BC50B6}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -26,12 +26,18 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\SnakeGame">
-      <UniqueIdentifier>{63AB2BBA-B07A-41ED-B0FC-EAF47904C883}</UniqueIdentifier>
+      <UniqueIdentifier>{84E250B1-3477-4724-856A-4E14B83BD0E6}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\SnakeGame\PlayerPawnBase.cpp">
       <Filter>Source\SnakeGame</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\SnakeGame\PlayerPawnBase.h">
+      <Filter>Source\SnakeGame</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\SnakeGame\SnakeBase.cpp">
+      <Filter>Source\SnakeGame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SnakeGame\SnakeBase.h">
       <Filter>Source\SnakeGame</Filter>
     </ClInclude>
     <None Include="..\..\Source\SnakeGame\SnakeGame.Build.cs">

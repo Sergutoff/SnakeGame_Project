@@ -3,3 +3,5 @@ C:\Projects\SnakeGame\Source\SnakeGame\PlayerPawnBase.h
 C:\Projects\SnakeGame\Intermediate\Build\Win64\UE4Editor\Inc\SnakeGame\PlayerPawnBase.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine/Classes/Camera/CameraComponent.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h
+C:\Projects\SnakeGame\Source\SnakeGame\SnakeBase.h
+C:\Projects\SnakeGame\Intermediate\Build\Win64\UE4Editor\Inc\SnakeGame\SnakeBase.generated.h
