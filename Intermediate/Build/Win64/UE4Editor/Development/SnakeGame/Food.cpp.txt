@@ -1,0 +1,5 @@
+C:\Projects\SnakeGame\Intermediate\Build\Win64\UE4Editor\Development\SnakeGame\Definitions.SnakeGame.h
+C:\Projects\SnakeGame\Source\SnakeGame\Food.h
+C:\Projects\SnakeGame\Source\SnakeGame\Interactable.h
+C:\Projects\SnakeGame\Intermediate\Build\Win64\UE4Editor\Inc\SnakeGame\Interactable.generated.h
+C:\Projects\SnakeGame\Intermediate\Build\Win64\UE4Editor\Inc\SnakeGame\Food.generated.h
