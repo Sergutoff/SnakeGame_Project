@@ -3,6 +3,7 @@
 
 #include "SnakeBase.h"
 #include "SnakeElementBase.h"
+#include "Interactable.h"
 
 // Sets default values
 ASnakeBase::ASnakeBase()
@@ -48,21 +49,20 @@ void ASnakeBase::AddSnakeElement(int ElementsNum)
 void ASnakeBase::Move()
 {
 	FVector MovementVector(ForceInitToZero);
-	float MovementSpeedES = ElementSize;
 
 	switch (LastMoveDirection)
 	{
 	case EMovementDirection::UP:
-		MovementVector.X += MovementSpeedES;
+		MovementVector.X += ElementSize;
 		break;
 	case EMovementDirection::DOWN:
-		MovementVector.X -= MovementSpeedES;
+		MovementVector.X -= ElementSize;
 		break;
 	case EMovementDirection::LEFT:
-		MovementVector.Y += MovementSpeedES;
+		MovementVector.Y += ElementSize;
 		break;
 	case EMovementDirection::RIGHT:
-		MovementVector.Y -= MovementSpeedES;
+		MovementVector.Y -= ElementSize;
 		break;
 	}
 
@@ -86,6 +86,11 @@ void ASnakeBase::SnakeElementOverlap(ASnakeElementBase* OverlappedElement, AActo
 		int32 ElemIndex;
 		SnakeElements.Find(OverlappedElement, ElemIndex);
 		bool bIsFirst = ElemIndex == 0;
+		IInteractable* InteractableInterface = Cast<IInteractable>(Other);
+		if (InteractableInterface)
+		{
+			InteractableInterface->Interact(this, bIsFirst);
+		}
 	}
 }
 
