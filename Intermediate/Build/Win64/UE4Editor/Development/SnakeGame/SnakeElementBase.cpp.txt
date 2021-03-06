@@ -3,3 +3,5 @@ C:\Projects\SnakeGame\Source\SnakeGame\SnakeElementBase.h
 C:\Projects\SnakeGame\Source\SnakeGame\Interactable.h
 C:\Projects\SnakeGame\Intermediate\Build\Win64\UE4Editor\Inc\SnakeGame\Interactable.generated.h
 C:\Projects\SnakeGame\Intermediate\Build\Win64\UE4Editor\Inc\SnakeGame\SnakeElementBase.generated.h
+C:\Projects\SnakeGame\Source\SnakeGame\SnakeBase.h
+C:\Projects\SnakeGame\Intermediate\Build\Win64\UE4Editor\Inc\SnakeGame\SnakeBase.generated.h
