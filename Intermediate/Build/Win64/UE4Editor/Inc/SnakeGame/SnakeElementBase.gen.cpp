@@ -24,6 +24,13 @@ void EmptyLinkFunctionForGeneratedCodeSnakeElementBase() {}
 	SNAKEGAME_API UClass* Z_Construct_UClass_ASnakeBase_NoRegister();
 	SNAKEGAME_API UClass* Z_Construct_UClass_UInteractable_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(ASnakeElementBase::execToggleCollision)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->ToggleCollision();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ASnakeElementBase::execHandleBeginOverlap)
 	{
 		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OverlappedComponent);
@@ -55,6 +62,7 @@ void EmptyLinkFunctionForGeneratedCodeSnakeElementBase() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "HandleBeginOverlap", &ASnakeElementBase::execHandleBeginOverlap },
 			{ "SetFirstElementType", &ASnakeElementBase::execSetFirstElementType },
+			{ "ToggleCollision", &ASnakeElementBase::execToggleCollision },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -161,6 +169,28 @@ void EmptyLinkFunctionForGeneratedCodeSnakeElementBase() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ASnakeElementBase_ToggleCollision_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ASnakeElementBase_ToggleCollision_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "SnakeElementBase.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ASnakeElementBase_ToggleCollision_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ASnakeElementBase, nullptr, "ToggleCollision", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ASnakeElementBase_ToggleCollision_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ASnakeElementBase_ToggleCollision_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ASnakeElementBase_ToggleCollision()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ASnakeElementBase_ToggleCollision_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_ASnakeElementBase_NoRegister()
 	{
 		return ASnakeElementBase::StaticClass();
@@ -192,6 +222,7 @@ void EmptyLinkFunctionForGeneratedCodeSnakeElementBase() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_ASnakeElementBase_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ASnakeElementBase_HandleBeginOverlap, "HandleBeginOverlap" }, // 3075771056
 		{ &Z_Construct_UFunction_ASnakeElementBase_SetFirstElementType, "SetFirstElementType" }, // 2325014868
+		{ &Z_Construct_UFunction_ASnakeElementBase_ToggleCollision, "ToggleCollision" }, // 3672903448
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASnakeElementBase_Statics::Class_MetaDataParams[] = {
@@ -247,7 +278,7 @@ void EmptyLinkFunctionForGeneratedCodeSnakeElementBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASnakeElementBase, 1516302622);
+	IMPLEMENT_CLASS(ASnakeElementBase, 1172324206);
 	template<> SNAKEGAME_API UClass* StaticClass<ASnakeElementBase>()
 	{
 		return ASnakeElementBase::StaticClass();

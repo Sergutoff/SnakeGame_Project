@@ -20,12 +20,14 @@ struct FHitResult;
 #define SnakeGame_Source_SnakeGame_SnakeElementBase_h_16_RPC_WRAPPERS \
 	virtual void SetFirstElementType_Implementation(); \
  \
+	DECLARE_FUNCTION(execToggleCollision); \
 	DECLARE_FUNCTION(execHandleBeginOverlap); \
 	DECLARE_FUNCTION(execSetFirstElementType);
 
 
 #define SnakeGame_Source_SnakeGame_SnakeElementBase_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execToggleCollision); \
 	DECLARE_FUNCTION(execHandleBeginOverlap); \
 	DECLARE_FUNCTION(execSetFirstElementType);
 
