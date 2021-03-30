@@ -5,6 +5,7 @@
 #include "Engine/Classes/Camera/CameraComponent.h"
 #include "SnakeBase.h"
 #include "Components/InputComponent.h"
+#include "Arena.h"
 
 // Sets default values
 APlayerPawnBase::APlayerPawnBase()
@@ -22,6 +23,7 @@ void APlayerPawnBase::BeginPlay()
 	Super::BeginPlay();
 	SetActorRotation(FRotator(-90, 0, 0));
 	CreateSnakeActor();
+	SpawnArenaActor();
 }
 
 // Called every frame
@@ -73,5 +75,10 @@ void APlayerPawnBase::HandlePlayerHorizontalInput(float value)
 			SnakeActor->LastMoveDirection = EMovementDirection::LEFT;
 		}
 	}
+}
+
+void APlayerPawnBase::SpawnArenaActor()
+{
+	ArenaActor = GetWorld()->SpawnActor<AArena>(ArenaActorClass, FTransform());
 }
 

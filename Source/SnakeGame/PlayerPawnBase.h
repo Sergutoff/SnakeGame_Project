@@ -8,6 +8,7 @@
 
 class UCameraComponent;
 class ASnakeBase;
+class AArena;
 
 UCLASS()
 class SNAKEGAME_API APlayerPawnBase : public APawn
@@ -26,6 +27,12 @@ public:
 
 	UPROPERTY(EditDefaultsOnly)
 	TSubclassOf<ASnakeBase> SnakeActorClass;
+
+	UPROPERTY(BlueprintReadWrite)
+	AArena* ArenaActor;
+
+	UPROPERTY(EditDefaultsOnly)
+	TSubclassOf<AArena> ArenaActorClass;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -44,4 +51,6 @@ public:
 
 	UFUNCTION()
 	void HandlePlayerHorizontalInput(float value);
+
+	void SpawnArenaActor();
 };

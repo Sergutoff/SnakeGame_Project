@@ -7,6 +7,7 @@
 /IGNORE:4221
 /NODEFAULTLIB
 "C:\Projects\SnakeGame\Intermediate\Build\Win64\SnakeGameEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Projects\SnakeGame\Intermediate\Build\Win64\UE4Editor\Development\SnakeGame\Arena.cpp.obj"
 "C:\Projects\SnakeGame\Intermediate\Build\Win64\UE4Editor\Development\SnakeGame\DeadZoneActor.cpp.obj"
 "C:\Projects\SnakeGame\Intermediate\Build\Win64\UE4Editor\Development\SnakeGame\Food.cpp.obj"
 "C:\Projects\SnakeGame\Intermediate\Build\Win64\UE4Editor\Development\SnakeGame\Interactable.cpp.obj"
@@ -15,6 +16,8 @@
 "C:\Projects\SnakeGame\Intermediate\Build\Win64\UE4Editor\Development\SnakeGame\SnakeElementBase.cpp.obj"
 "C:\Projects\SnakeGame\Intermediate\Build\Win64\UE4Editor\Development\SnakeGame\SnakeGame.cpp.obj"
 "C:\Projects\SnakeGame\Intermediate\Build\Win64\UE4Editor\Development\SnakeGame\SnakeGameGameModeBase.cpp.obj"
+"C:\Projects\SnakeGame\Intermediate\Build\Win64\UE4Editor\Development\SnakeGame\Wall.cpp.obj"
+"C:\Projects\SnakeGame\Intermediate\Build\Win64\UE4Editor\Development\SnakeGame\Arena.gen.cpp.obj"
 "C:\Projects\SnakeGame\Intermediate\Build\Win64\UE4Editor\Development\SnakeGame\DeadZoneActor.gen.cpp.obj"
 "C:\Projects\SnakeGame\Intermediate\Build\Win64\UE4Editor\Development\SnakeGame\Food.gen.cpp.obj"
 "C:\Projects\SnakeGame\Intermediate\Build\Win64\UE4Editor\Development\SnakeGame\Interactable.gen.cpp.obj"
@@ -23,6 +26,7 @@
 "C:\Projects\SnakeGame\Intermediate\Build\Win64\UE4Editor\Development\SnakeGame\SnakeElementBase.gen.cpp.obj"
 "C:\Projects\SnakeGame\Intermediate\Build\Win64\UE4Editor\Development\SnakeGame\SnakeGame.init.gen.cpp.obj"
 "C:\Projects\SnakeGame\Intermediate\Build\Win64\UE4Editor\Development\SnakeGame\SnakeGameGameModeBase.gen.cpp.obj"
+"C:\Projects\SnakeGame\Intermediate\Build\Win64\UE4Editor\Development\SnakeGame\Wall.gen.cpp.obj"
 "C:\Projects\SnakeGame\Intermediate\Build\Win64\UE4Editor\Development\SnakeGame\Default.rc2.res"
 /OUT:"C:\Projects\SnakeGame\Intermediate\Build\Win64\UE4Editor\Development\SnakeGame\UE4Editor-SnakeGame.lib"
 /INCLUDE:IMPLEMENT_MODULE_SnakeGame
